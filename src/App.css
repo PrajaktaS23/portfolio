@@ -7,3 +7,11 @@ body{
   margin: 0;
   padding: 0;
 }
+
+html{
+  background-color: #5CDB95;
+  background-size: cover;
+}
+.home{
+  position:relative;
+}
