@@ -4,11 +4,11 @@ import Navlinks from './Navlinks';
 
 const MyMobileNavbar = styled.nav`
 width:50vw;
-background:${ props => props.theme.faintGreen };
+background:${ props => props.theme.blue };
 position: fixed;
-top:15vh;
+top:12vh;
 margin-bottom: 15px;
-box-shadow:-10px 10px 5px ${ props => props.theme.darkGreen};
+box-shadow:-10px 5px 15px ${ props => props.theme.black};
 align-self: flex-end;
 
 transition: transform 1s;
@@ -31,7 +31,7 @@ transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("108%")
 .link{
    
 
-    color:${ props => props.theme.primary};
+    color:${ props => props.theme.white};
     font-size:2.8vh;
     
     text-decoration:none;

@@ -2,26 +2,29 @@ import React from 'react';
 import styled from 'styled-components';
 import Navlinks from './Navlinks';
 import Arrow from '../../images/keyboard_arrow_left-black-18dp.svg';
+import logo from '../../images/logo.svg';
+import {Link} from 'react-scroll';
 
 const MyDesktopNavbar = styled.nav`
 display:flex;
 flex-flow:row nowrap;
-justify-content: space-evenly;
+justify-content: space-between;
 align-items:center;
 position:fixed;
 
-background:${ props => props.theme.faintGreen };
+background:${ props => props.theme.blue };
 color: white;
 width:100vw;
-height:15vh;
+height:12vh;
 
-box-shadow:0 10px 5px ${ props => props.theme.darkGreen };
+box-shadow:0 5px 15px ${ props => props.theme.black };
 
 .logo{
-    font-size:7vh;
-    font-style:bold;
+  
     text-shadow: 3px 3px 3px black;
-    font-family: 'Satisfy', cursive;
+    margin-left:5vw;
+    color:${ props => props.theme.orange };
+    
 }
 
 .nav-links {
@@ -63,7 +66,7 @@ box-shadow:0 10px 5px ${ props => props.theme.darkGreen };
         content:'';
         height:2px;
         width:0;
-        background:white;
+        background:${ props => props.theme.orange };
         display:block;
         transition:width 0.5s;
     }
@@ -83,7 +86,7 @@ height:6vh;
 width:6vh;
 border:none;
 display:none;
-
+margin-right:5vw;
 transition:transform 1s ease-in-out;
 transform:rotate(${ props => props.displayMobileNavbar ? ("540deg") : ("0deg") });
 
@@ -102,7 +105,9 @@ const DesktopNavbar = props => {
     return (
         
             <MyDesktopNavbar>
-                <div className="logo">Ps</div>
+                <div className="logo">
+               <Link to="home" smooth={true} duration={1000}><img src={logo} alt="P"/></Link>
+                </div>
                  <Navlinks/>
 
 
