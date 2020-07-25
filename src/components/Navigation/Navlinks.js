@@ -9,20 +9,20 @@ const Navlinks = props => {
     return (
              <ul className="nav-links">
                      <li>
-                         <Link to="home" smooth={true} duration={1000} className="link" tabIndex= { tempTabIndex }>Home</Link>
+                         <Link to="home" smooth={true} duration={1000}  className="link" tabIndex= { tempTabIndex }>Home</Link>
                      </li>
                      <li>
-                        <Link to="about" smooth={true} duration={1000} className="link" tabIndex= { tempTabIndex }>About</Link>
+                        <Link to="about" smooth={true} duration={1000}  offset={-20}  className="link" tabIndex= { tempTabIndex }>About</Link>
                      </li>
                      <li>
-                        <Link to="education" smooth={true} duration={1000} className="link" tabIndex= { tempTabIndex }>Education</Link>
+                        <Link to="education" smooth={true} duration={1000}  offset={-70} className="link" tabIndex= { tempTabIndex }>Education</Link>
                      </li>
                      <li>
                        
-                     <Link to="projects" smooth={true} duration={1000} className="link" tabIndex= { tempTabIndex }>Projects</Link>
+                     <Link to="projects" smooth={true} duration={1000}  offset={-70} className="link" tabIndex= { tempTabIndex }>Projects</Link>
                      </li>
                      <li>
-                        <Link to="contact" smooth={true} duration={1000} className="link" tabIndex= { tempTabIndex }>Contact</Link>
+                        <Link to="contact" smooth={true} duration={1000}   className="link" tabIndex= { tempTabIndex }>Contact</Link>
                      </li>
               </ul>
     );
