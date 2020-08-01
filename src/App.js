@@ -17,11 +17,13 @@ function App() {
  
      
       <Navbar/>
+      <div>
       <Home/>
       <About/>
       <Education/>
       <Projects/>
       <Contact/>
+      </div>
 
     </div>
    

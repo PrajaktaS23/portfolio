@@ -3,21 +3,15 @@ import styled from 'styled-components';
 import { faFacebook,faInstagram,faLinkedin,faGithub } from "@fortawesome/free-brands-svg-icons";
 import{FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Spin from 'react-reveal/Spin';
+import Fade from 'react-reveal/Fade';
 
 const ContactMe= styled.div`
 height:90vh;
 display:flex;
 flex-direction:column;
 
-.line{
-    background-color:${ props => props.theme.orange };
-    height:3px;
-    align-self:center;
-    width:80%;
-    @media screen and (min-width:800px){
-  display:none
-}
-}
+
+
 
 h1{
     color:#666666;
@@ -165,15 +159,21 @@ p{
 const Contact = () => {
     return (
         <ContactMe id="contact">
+             <Fade bottom>
             <center><h1>CONTACT ME</h1></center>
+            </Fade>
+            
             <Mail>
               <a href="mailto:sonvane.p.r@gmail.com"> Drop Mail</a>
             </Mail>
+            
+            <Fade bottom>
             <Message>
                 <p className="bigtxt">LET'S GET <b>SOCIAL</b></p>
                 <p className="smalltxt">I'm ready to connect with you!</p>
             </Message>
-            <div className="line"></div>
+            </Fade>
+            
             <Social>
                 <ul>
                 <Spin>

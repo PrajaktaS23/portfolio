@@ -12,24 +12,30 @@ font-weight:2px;
 display:flex;
 flex-direction:column;
 `;
+const Hero = styled.div`
+display:flex;
+flex-direction:column;
+
+@media screen and (min-width:800px){
+    margin:0 auto;
+    margin-top:180px;
+   
+}
+@media screen and (max-width:800px){
+    margin: 0 auto;
+    margin-top:250px;
+}
+`;
 
 const Welcome = styled.div`
 justify-self:flex-end;
-flex:1;
+
 display:flex;
 flex-direction:row;
 
 justify-content:flex-start;
 
-@media screen and (min-width:800px){
-    margin-left:300px;
-    margin-top:180px;
-   
-}
-@media screen and (max-width:800px){
-    margin: auto;
-    margin-top:250px;
-}
+
 
 .line{
     height: 140px;
@@ -86,17 +92,14 @@ justify-content:flex-start;
 `;
 
 const Resume=styled.div`
-flex:2;
+
 
 @media screen and (min-width:800px){
-    margin-left:300px;
-    margin-top:40px;
-   
+   float:left;
    
 }
 @media screen and (max-width:800px){
-    margin:auto;
-    margin-top:20px;
+   float:left;
 }
 
 a{
@@ -119,7 +122,7 @@ a{
 `;
 
 const WaveContainer = styled.div`
-flex:2;
+
 
 @media screen and (max-width:800px){
 
@@ -139,6 +142,7 @@ const Home = () => {
     return (
         
         <MyHome id="home">
+            <Hero>
             <Welcome>
                 
                 <div className="line">
@@ -156,7 +160,7 @@ const Home = () => {
              <Resume>
                 <a href={ResumeP} download>Resume</a>
              </Resume>
-
+            </Hero>
 
             <WaveContainer> 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 500">

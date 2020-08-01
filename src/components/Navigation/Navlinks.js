@@ -17,7 +17,7 @@ const Navlinks = props => {
                          <Link to="projects" smooth={true} duration={1000}  offset={-100} className="link" >Projects</Link>
                      </li>
                      <li>
-                        <Link to="contact" smooth={true} duration={1000}  offset={-100}   className="link">Contact</Link>
+                        <Link to="contact" smooth={true} duration={1000}   className="link">Contact</Link>
                      </li>
               </ul>
     );
