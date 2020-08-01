@@ -11,7 +11,7 @@ flex-flow:row nowrap;
 justify-content: space-between;
 align-items:center;
 position:fixed;
-
+z-index:10;
 background:${ props => props.theme.blue };
 color: white;
 width:100vw;
@@ -36,7 +36,7 @@ box-shadow:0 5px 15px ${ props => props.theme.black };
      width:35vw;
      list-style:none;
 
-     @media screen and (max-width: 768px)
+     @media screen and (max-width: 800px)
     {
     display:none;
     }
@@ -94,7 +94,7 @@ transform:rotate(${ props => props.displayMobileNavbar ? ("540deg") : ("0deg") }
 outline:none;
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 800px)
 {
     display:block;
 }

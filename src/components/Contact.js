@@ -1,21 +1,94 @@
 import React from 'react';
 import styled from 'styled-components';
-import { faFacebook,faInstagram,faLinkedin,faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook,faInstagram,faLinkedin,faGithub } from "@fortawesome/free-brands-svg-icons";
 import{FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Spin from 'react-reveal/Spin';
 
 const ContactMe= styled.div`
-height:100vh;
+height:90vh;
 display:flex;
 flex-direction:column;
 
+.line{
+    background-color:${ props => props.theme.orange };
+    height:3px;
+    align-self:center;
+    width:80%;
+    @media screen and (min-width:800px){
+  display:none
+}
+}
+
+h1{
+    color:#666666;
+    padding:30px;
+    font-size:45px;
+    @media screen and (max-width:700px){
+    font-size:30px;
+    flex:1;
+}
+}
+
+`;
+const Mail=styled.div`
+align-self:center;
+justify-self:flex-end;
+margin-top:30px;
+flex:1;
+a{
+    text-decoration:none;
+    width:150px;
+    height:50px;
+    font-size:20px;
+    padding:10px;
+    @media screen and (max-width:800px){
+    width:120px;
+    height:50px;
+    font-size:20px;
+    padding:10px;
+    }
+    color:${ props => props.theme.orange };
+    background-color:${ props => props.theme.blue };
+    border:solid 1px ${ props => props.theme.orange };
+
+}
+`;
+const Message=styled.div`
+display:flex;
+flex-direction:column;
+align-self:center;
+align-items:center;
+
+flex:1;
+justify-content:space-around;
+
+margin:auto;
+
+.bigtxt{
+    font-size:25px;
+    color:white;
+    @media screen and (max-width:700px){
+    font-size:20px;
+   }
+}
+.smalltxt{
+    font-size:20px;
+    font-family: 'Space Mono', monospace;
+    color: ${ props => props.theme.faintWhite};
+    @media screen and (max-width:700px){
+    font-size:15px;
+   
+   }
+}
 `;
 
 const Social= styled.div`
 display:flex;
-justify-content:center;
+justify-content:flex-start;
 flex-direction:column;
 height:100%;
-
+margin-top:10px;
+flex:1;
 
 ul{
     margin:0;
@@ -39,7 +112,7 @@ li:hover i{
     color:#fff;
 }
 li:hover a{
-    background-color:red;
+    background-color:${ props => props.theme.orange };
 }
 
 i{
@@ -79,24 +152,49 @@ background:black;
 opacity:0.5;
 width:100%;
 color:white;
-height:5vh;
+
 text-align:center;
 text-justify:center;
+
+p{
+@media screen and (max-width:800px){
+  font-size:12px;
+   }}
 `;
 
 const Contact = () => {
     return (
         <ContactMe id="contact">
+            <center><h1>CONTACT ME</h1></center>
+            <Mail>
+              <a href="mailto:sonvane.p.r@gmail.com"> Drop Mail</a>
+            </Mail>
+            <Message>
+                <p className="bigtxt">LET'S GET <b>SOCIAL</b></p>
+                <p className="smalltxt">I'm ready to connect with you!</p>
+            </Message>
+            <div className="line"></div>
             <Social>
                 <ul>
+                <Spin>
                     <li><a href="https://www.facebook.com/prajakta.sonvane.94" target="_blank"><i><FontAwesomeIcon icon={faFacebook}/></i> </a></li>
+                </Spin>
+                <Spin>
                     <li><a href="http://www.instagram.com/_prajakta_sonvane_" target="_blank"><i><FontAwesomeIcon icon={faInstagram}/></i> </a></li>
-                    <li><a href="http://www.gmail.com/sonvane.p.r" target="_blank"><i><FontAwesomeIcon icon={faGoogle} /></i> </a></li>
+                </Spin>
+                <Spin>
+                    <li><a href="http://github.com/PrajaktaS23" target="_blank"><i><FontAwesomeIcon icon={faGithub} /></i> </a></li>
+                </Spin>
+                <Spin>
                     <li><a href="https://www.linkedin.com/in/prajakta-sonvane-7b64b81a4" target="_blank"><i><FontAwesomeIcon icon={faLinkedin}/></i> </a></li>
+                </Spin>
+                
                 </ul>
             </Social>
+            
             <Footer>
                <p>designed & developed by prajakta Sonvane</p>
+               <p>sonvane.p.r@gmail.com</p>
             </Footer>
 
             

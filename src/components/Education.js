@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 const MyEducation= styled.div`
 height:100vh;
 
@@ -14,7 +15,7 @@ h1{
     color:#666666;
     padding:30px;
     font-size:45px;
-    @media screen and (max-width:800px){
+    @media screen and (max-width:700px){
     font-size:30px;
 }
 }
@@ -29,6 +30,10 @@ direction: flex;
 flex-wrap : wrap;
 max-width : 800px;
 margin: 0 auto;
+
+@media screen and (max-width:800px){
+    margin-right:15px;
+}
 
 
 
@@ -76,15 +81,17 @@ color: #fff;
     background: ${ props => props.theme.blue};
     margin-bottom: 3%;
     border: solid 3px ${ props => props.theme.orange };
+  
 
 }
 .box-text p{
-color:  #ffd6cc;
+color: ${ props => props.theme.faintWhite};
 }
 .box-text h2{
     margin:0;
     font-size:14px;
     text-transform:uppercase;
+    color: ${ props => props.theme.faintWhite}
 }
 
 .box-text h3{
@@ -113,13 +120,13 @@ color:  #ffd6cc;
 
 const Education = () => {
     return (
-        <MyEducation id="education">
         
+        <MyEducation id="education">
+            <Fade bottom>
               <center>  <h1>EDUCATION</h1> </center>
-         
+            </Fade>
+            <Fade bottom>
             <Wrapper>
-               
-                
                 <div className="box-area box-right">
                     <div className="custom"></div>
                     <div className="box-date">
@@ -132,6 +139,7 @@ const Education = () => {
                      </div>
                     
                 </div>
+          
                 <div className="box-area ">
                     <div className="custom"></div>
                     <div className="box-date">
@@ -143,6 +151,7 @@ const Education = () => {
                         <p>with 72%</p>
                      </div>
                 </div>
+           
                 <div className="box-area box-right">
                          <div className="custom"></div>
                          <div className="box-date">
@@ -154,8 +163,11 @@ const Education = () => {
                              <p>with CGPA 9.04</p>
                           </div>
                 </div>
+           
             </Wrapper>
+            </Fade>
         </MyEducation>
+
     );
 };
 
