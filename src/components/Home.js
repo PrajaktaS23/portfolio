@@ -92,14 +92,9 @@ justify-content:flex-start;
 `;
 
 const Resume=styled.div`
-
-
-
-   float:left;
-   
-
-   
-
+  
+margin-top:5px;
+margin-left:0px;
 
 a{
     text-decoration:none;

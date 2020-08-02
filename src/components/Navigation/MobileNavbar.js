@@ -24,7 +24,7 @@ transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("108%")
     justify-content: space-evenly;
     align-items:center;
      
-     height:60vh;
+     height:400px;
      list-style:none;
 
 }
@@ -34,7 +34,7 @@ transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("108%")
 
     color:${ props => props.theme.white};
     font-size:2.8vh;
-    
+    padding:5px;
     text-decoration:none;
 
 }
