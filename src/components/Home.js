@@ -94,13 +94,12 @@ justify-content:flex-start;
 const Resume=styled.div`
 
 
-@media screen and (min-width:800px){
+
    float:left;
    
-}
-@media screen and (max-width:800px){
-   float:left;
-}
+
+   
+
 
 a{
     text-decoration:none;
@@ -125,13 +124,11 @@ const WaveContainer = styled.div`
 
 
 @media screen and (max-width:800px){
-
-    margin-top:30px;
+   
+    margin-top:150px;
 }
 svg{
     display:block;
-    justify-self:flex-end
-    
 }
 
 `;

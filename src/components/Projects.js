@@ -47,6 +47,9 @@ justify-content:space-around;
         color:white;
         padding:5px;
         font-size:16px;
+        @media screen and (max-width:800px){
+      font-size:13px;
+    }
     }
 
     }
@@ -94,7 +97,7 @@ const Projects = () => {
                     <div className="line"></div>
                     <div class="content"><p><a href="http://m.pragyaa.org/" target="_blank">http://m.pragyaa.org/</a><br/>
                     Pragyaa is a National event organized by SGGSIE&T.As a volunteer of web development comity I was part of this project.
-                    It was a mobile website for giving information about all events with important dates. 
+                    We have developed mobile website for giving information about all events with important dates. 
                     </p></div>
                 </div>
                 
@@ -104,7 +107,7 @@ const Projects = () => {
                     <div className="line"></div>
                     <div class="content"><p>I have done this project at <b style={{color:"white"}}>Internal Hackathon 2020</b>.<br/>
                     It was 48 hours competation in which my team had secured 3rd rank.
-                    It was a android application through  which victims can share their location to police by just shaking their mobile and generating specific frequency. </p></div>
+                    This project was an android application through  which victims can share their location to police by just shaking their mobile and generating specific frequency. </p></div>
                 </div>
          
             </Container>

@@ -148,7 +148,7 @@ const Education = () => {
                     <div className="box-text ">
                         <h2>Yeshwant Mahavidyalaya,Nanded.</h2>
                         <h3>HSC</h3>
-                        <p>with 72%</p>
+                        <p>with 72.31%</p>
                      </div>
                 </div>
            
@@ -158,9 +158,10 @@ const Education = () => {
                              <span>2020</span>
                           </div>
                           <div className="box-text">
+                              <p>(present)</p>
                              <h2>SGGSIE & T Nanded</h2>
                              <h3>BTech in computer science</h3>
-                             <p>with CGPA 9.04</p>
+                             <p>with CGPA 9.09</p>
                           </div>
                 </div>
            

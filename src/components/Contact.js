@@ -12,7 +12,6 @@ flex-direction:column;
 
 
 
-
 h1{
     color:#666666;
     padding:30px;
@@ -102,12 +101,7 @@ li{
    
 }
 
-li:hover i{
-    color:#fff;
-}
-li:hover a{
-    background-color:${ props => props.theme.orange };
-}
+
 
 i{
     font-size:30px;
@@ -134,6 +128,13 @@ a{
     @media screen and (max-width:800px){
     width:30px;
     height:30px;
+   }
+
+   &:hover{
+    background-color:${ props => props.theme.orange };
+    i{
+    color:#fff;
+    }
    }
 
 
