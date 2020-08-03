@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from './components/Navigation/Navbar';
 
 
@@ -7,25 +7,26 @@ import About from './components/About';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import 'normalize.css';
 import './App.css';
 
 function App() {
 
   
   return (
-    <div>
+    <>
  
      
       <Navbar/>
-      <div>
+      
       <Home/>
       <About/>
       <Education/>
       <Projects/>
       <Contact/>
-      </div>
+   </>
 
-    </div>
+    
    
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
-import ResumeP from '../data/Prajakta_cv.pdf';
+import ResumeP from '../data/Resume.pdf';
 
 const MyHome= styled.div`
 height:100vh;
@@ -9,12 +9,21 @@ height:100vh;
 color: white;
 font-size:50px;
 font-weight:2px;
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex ;
+display: -o-flex;
 display:flex;
 flex-direction:column;
 `;
 const Hero = styled.div`
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex ;
+display: -o-flex;
 display:flex;
 flex-direction:column;
+flex:2;
 
 @media screen and (min-width:800px){
     margin:0 auto;
@@ -23,12 +32,16 @@ flex-direction:column;
 }
 @media screen and (max-width:800px){
     margin: 0 auto;
-    margin-top:250px;
+    margin-top:200px;
 }
 `;
 
 const Welcome = styled.div`
 justify-self:flex-end;
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex ;
+display: -o-flex;
 
 display:flex;
 flex-direction:row;
@@ -55,8 +68,13 @@ justify-content:flex-start;
 
 .intro{
     margin-left:1vw;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex ;
+    display: -o-flex;
     display:flex;
     flex-direction:column;
+    flex:2;
     
     align-content:flex-flex-end;
     
@@ -93,20 +111,19 @@ justify-content:flex-start;
 
 const Resume=styled.div`
   
-margin-top:5px;
+flex:1;
+margin-top:8px;
 margin-left:0px;
 
 a{
     text-decoration:none;
-    width:150px;
-    height:50px;
-    font-size:18px;
-    padding:15px;
+    
+    font-size:24px;
+    padding:8px;
     @media screen and (max-width:700px){
-    width:120px;
-    height:50px;
+ 
     font-size:20px;
-    padding:10px;
+    padding:8px;
     }
     color:${ props => props.theme.orange };
     background-color:${ props => props.theme.blue };
@@ -119,8 +136,8 @@ const WaveContainer = styled.div`
 
 
 @media screen and (max-width:800px){
-   
-    margin-top:150px;
+   flex:1;
+    margin-bottom:0;
 }
 svg{
     display:block;
@@ -145,7 +162,7 @@ const Home = () => {
                 <div className="intro">
                <p className="textSmallspace">Hi , I am</p>
                <p className="textLarge">Prajakta Sonvane</p>
-               <p className="textSmall">Computer Science Student</p>
+               <p className="textSmall">Computer science student</p>
                </div>
                </Fade>
              </Welcome>

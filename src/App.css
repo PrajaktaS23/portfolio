@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  font-family: 'Recursive', sans-serif;
+  font-family: 'Cairo', sans-serif;
   overflow-x: hidden;
   
 }
@@ -15,28 +15,5 @@ html{
   background-size: cover;
  
 }
-.home{
-  position:relative;
-}
 
-.page-enter {
-  opacity: 0.01;
-  transform: translateX(-100%);
-}
 
-.page-enter-active {
-  opacity: 1;
-  transform: translateX(0%);
-  transition: all 300ms ease-in;
-}
-
-.page-exit {
-  opacity: 1;
-  transform: translateX(0%);
-}
-
-.page-exit-active {
-  opacity: 0.01;
-  transform: translateX(100%);
-  transition: all 300ms ease-out;
-}

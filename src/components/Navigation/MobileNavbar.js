@@ -20,6 +20,7 @@ transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("108%")
 
 .nav-links {
     display:flex;
+    flex:1;
     flex-flow:column nowrap;
     justify-content: space-evenly;
     align-items:center;

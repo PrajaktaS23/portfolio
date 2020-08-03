@@ -66,7 +66,7 @@ justify-content:space-around;
     }
 
     .content{
-        font-size:15px;
+        font-size:18px;
         padding:4px;
         color: ${ props => props.theme.faintWhite};
         
@@ -87,7 +87,7 @@ const Projects = () => {
                 <div class="card">
                     <div class="heading"><h2>Hostel Management</h2></div>
                     <div className="line"></div>
-                    <div class="content"><p>I have done this project for Acadamic project submission.<br/>
+                    <div class="content"><p>I have done this project for acadamic project submission.<br/>
                     Basically, it is a web application through which room allocation process in hostel can be managed.
                     This projets is developed using php with mysql database.</p></div>
                 </div>

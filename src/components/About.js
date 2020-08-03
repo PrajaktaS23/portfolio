@@ -88,8 +88,8 @@ const About = () => {
                 <Fade bottom>   
                 <p>Hello, I am Prajakta Sonvane. I live in Maharashtra,India. 
                     <br/><br/>
-                I am perceiving BTech degree in Computer Science at SGGS Nanded.
-                I develope highly responsive websites and user friendly desktop applications ,also I am a Machine Learning enthusiast.
+                I am perceiving BTech degree in computer science at SGGS Nanded.
+                I develope highly responsive websites and user friendly desktop applications ,also I am a machine learning enthusiast.
         
                 </p>
                 </Fade>

@@ -165,7 +165,7 @@ const Contact = () => {
             </Fade>
             
             <Mail>
-              <a href="mailto:sonvane.p.r@gmail.com"> Drop Mail</a>
+              <a href="mailto:sonvane.p.r@gmail.com"> Drop mail</a>
             </Mail>
             
             <Fade bottom>
@@ -178,16 +178,16 @@ const Contact = () => {
             <Social>
                 <ul>
                 <Spin>
-                    <li><a href="https://www.facebook.com/prajakta.sonvane.94" target="_blank"><i><FontAwesomeIcon icon={faFacebook}/></i> </a></li>
+                    <li><a href="https://www.facebook.com/prajakta.sonvane.94" target="_blank" rel="noopener noreferrer"><i><FontAwesomeIcon icon={faFacebook}/></i> </a></li>
                 </Spin>
                 <Spin>
-                    <li><a href="http://www.instagram.com/_prajakta_sonvane_" target="_blank"><i><FontAwesomeIcon icon={faInstagram}/></i> </a></li>
+                    <li><a href="http://www.instagram.com/_prajakta_sonvane_" target="_blank" rel="noopener noreferrer"><i><FontAwesomeIcon icon={faInstagram}/></i> </a></li>
                 </Spin>
                 <Spin>
-                    <li><a href="http://github.com/PrajaktaS23" target="_blank"><i><FontAwesomeIcon icon={faGithub} /></i> </a></li>
+                    <li><a href="http://github.com/PrajaktaS23" target="_blank" rel="noopener noreferrer"><i><FontAwesomeIcon icon={faGithub} /></i> </a></li>
                 </Spin>
                 <Spin>
-                    <li><a href="https://www.linkedin.com/in/prajakta-sonvane-7b64b81a4" target="_blank"><i><FontAwesomeIcon icon={faLinkedin}/></i> </a></li>
+                    <li><a href="https://www.linkedin.com/in/prajakta-sonvane-7b64b81a4" target="_blank" rel="noopener noreferrer"><i><FontAwesomeIcon icon={faLinkedin}/></i> </a></li>
                 </Spin>
                 
                 </ul>
